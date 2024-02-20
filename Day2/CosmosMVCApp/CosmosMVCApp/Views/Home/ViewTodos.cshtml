@@ -1,0 +1,15 @@
+﻿@model List<Todo>
+
+<h1>View Todos</h1>
+
+<h1>Count : @Model.Count</h1>
+
+<ul>
+    @foreach (var todo in Model)
+    {
+
+        <li>@todo.Id ,@todo.Title , @todo.Priority</li>
+
+    }
+
+</ul>
