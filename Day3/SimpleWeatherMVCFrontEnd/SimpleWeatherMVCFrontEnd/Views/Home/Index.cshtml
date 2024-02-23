@@ -1,0 +1,10 @@
+﻿@model List<WeatherForecast>
+
+
+<ul>
+
+    @foreach (var item in Model)
+    {
+        <li>@item.TemperatureC --> @item.Summary --> @item.Date</li>
+    }
+</ul>
